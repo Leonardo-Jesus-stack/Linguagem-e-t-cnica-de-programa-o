@@ -39,3 +39,34 @@ int main() {
 	return 0;
 }
 
+5
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	float valor1, valor2, valor3, valor4, soma, media, produto;
+	
+	printf("Digite o valor 1:");
+	scanf ("%f", &valor1);
+	
+		printf("Digite o valor 2:");
+	scanf ("%f", &valor2);
+	
+		printf("Digite o valor 3:");
+	scanf ("%f", &valor3);
+	
+		printf("Digite o valor 4:");
+	scanf ("%f", &valor4);
+	
+	soma = valor1 + valor2 + valor3 + valor4;
+	media = (valor1 + valor2 + valor3 + valor4) /4;
+	produto = valor1 * valor2 * valor3 * valor4;
+	
+	printf ("Soma: %.2f\n", soma);
+	printf ("Media: %.2f\n", media);
+	printf ("Produto: %.2f\n", produto);
+	
+	return 0;
+}
+
+
