@@ -1,4 +1,4 @@
-
+1
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
@@ -17,3 +17,25 @@ int main(int argc, char *argv[]) {
 	return 0;
 
 }
+
+
+4
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	float salario, vendas, total;
+	
+	printf ("Digite seu salario:");
+	scanf("%f", &salario);
+	
+	printf ("Digite seu total de vendas:");
+	scanf ("%f", &vendas);
+	
+	total = salario + (vendas*0.15);
+	
+	printf ("Total a receber: %.2f", total);
+	
+	return 0;
+}
+
