@@ -18,6 +18,35 @@ int main(int argc, char *argv[]) {
 
 }
 
+2
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+	int expoente = 0;
+	double valor;
+	
+	printf("Digite um valor:");
+	scanf("%lf", &valor);
+	
+	while (valor>=10) {
+		valor = valor / 10;
+		expoente++;
+	}
+	
+	while (valor<1) {
+		valor = valor * 10;
+		expoente--;	
+	}
+
+	printf("%.2f x 10^%d", valor, expoente);
+	return 0;
+}
+
+3
+
+
 
 4
 #include <stdio.h>
