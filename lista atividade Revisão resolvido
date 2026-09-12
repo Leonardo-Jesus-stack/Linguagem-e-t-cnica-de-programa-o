@@ -1,0 +1,45 @@
+01
+
+
+
+
+03
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]){
+	
+	float nota1, nota2, nota3, media, falta;
+	char nome[50];
+	
+	printf ("Digite o nome do aluno:");
+	fgets(nome, sizeof(nome), stdin);
+
+	printf("Digite a primeira nota:");
+	scanf("%f", &nota1);
+	
+	printf("Digite a segunda nota:");
+	scanf("%f", &nota2);
+	
+	printf("Digite a terceira nota:");
+	scanf("%f", &nota3);
+	
+	media = (nota1 + nota2 + nota3)/3;
+	falta = 100-media;
+	
+	printf("Aluno: %s", nome);
+	
+	printf ("Media final %.2f", media);
+	
+	if (media >=70 && media <=100){
+		printf("\nAPROVADO");
+	} else if (media >=40 && media <=69){
+		printf("\nEXAME");
+		printf("\nFaltam %.2f pontos para atingir a nota 100 no exame", falta);
+	} else {
+		printf("\nREPROVADO");
+	}
+	
+	 return 0;
+}
