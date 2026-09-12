@@ -1,0 +1,73 @@
+01
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+	int idade, anoatual, mesatual, mesnascimento, anonascimento;
+	
+	printf ("Digite sua idade:");
+	scanf("%d", &idade);
+	
+	printf("Digite o ano atual:");
+	scanf("%d", &anoatual);
+	
+	printf("Digite o mes atual:");
+	scanf("%d", &mesatual);
+	
+	printf("Digite mes de nascimento:");
+	scanf("%d", &mesnascimento);
+	
+	anonascimento = anoatual - idade;
+	
+	if (mesatual < mesnascimento){
+		anonascimento = anonascimento -1;
+	}
+	
+	printf("Ano de nascimento: %d", anonascimento);
+	
+	
+	return 0;
+
+03
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+	float dolar, valor;
+	
+	printf("Digite o valor atual do Dolar:");
+	scanf("%f", &dolar);
+	
+	printf("Digite um valor em reais:");
+	scanf("%f", &valor);
+	
+	valor/dolar;
+	
+	printf("Seu valor em reais te da %.2f dolar", valor/dolar);
+	
+	return 0;
+}
+
+06
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]){
+
+  int n, antecessor, sucessor;
+  
+ printf ("Entre com o valor de N:");
+ scanf ("%d", &n);
+ 
+  sucessor = n+1;
+  antecessor = n-1;
+  	
+  printf (" o numero %d, seu antecessor %d e seu sucessor %d", n, n-1,n+1);
+
+   return 0;
+}
+
+07
