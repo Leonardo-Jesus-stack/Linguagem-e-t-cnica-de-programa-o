@@ -71,3 +71,79 @@ int main(int argc, char *argv[]){
 }
 
 07
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+    char ganhador1[50], ganhador2[50], ganhador3[50];
+    float primeiro, segundo, terceiro;
+
+    printf("Digite o nome do primeiro ganhador: ");
+    scanf(" %[^\n]", ganhador1);
+
+    printf("Digite o nome do segundo ganhador: ");
+    scanf(" %[^\n]", ganhador2);
+
+    printf("Digite o nome do terceiro ganhador: ");
+    scanf(" %[^\n]", ganhador3);
+
+    primeiro = 780000 * 0.46;
+    segundo = 780000 * 0.32;
+    terceiro = 780000 * 0.22;
+
+    printf("\nPrimeiro ganhador: %s  R$ %.2f", ganhador1, primeiro);
+    printf("\nSegundo ganhador: %s  R$ %.2f", ganhador2, segundo);
+    printf("\nTerceiro ganhador: %s  R$ %.2f", ganhador3, terceiro);
+
+    return 0;
+}
+
+
+08
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+	int tempo, horas, minutos, seg;
+
+    printf("Digite o tempo em segundos: ");
+    scanf("%d", &tempo);
+
+    horas = tempo / 3600;
+    minutos = (tempo % 3600) / 60;
+    seg = tempo % 60;
+
+    printf("%d:%d:%d\n", horas, minutos, seg);
+
+    return 0;
+}
+
+
+09
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(int argc, char *argv[]) {
+    int tempo, velocidade;
+    float distancia, litros;
+    
+    printf("Digite o tempo da viagem em horas:");
+    scanf("%d", &tempo);
+    
+    printf("Digite a velocidade media em km/h:");
+    scanf("%d", &velocidade);
+    
+    distancia = tempo * velocidade;
+    litros = distancia / 12;
+    
+    printf ("Litros gastos: %.3f", litros);
+
+    return 0;
+}
+
+10
+
+
