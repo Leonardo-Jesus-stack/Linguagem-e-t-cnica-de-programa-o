@@ -76,4 +76,47 @@ int main(int argc, char *argv[]) {
   }
 
 08
+#include <stdio.h>
+#include <stdlib.h>
+
+	float calculoIRPF(float salariobase){
+		
+		if (salariobase <=2259.20){
+			return 0;
+		}
+		
+		else if (salariobase >=2259.21 && salariobase <=2826.65){
+			return (salariobase * 0.075) - 169.44;
+		}
+		
+		else if (salariobase >=2826.66 && salariobase <=3751.05){
+			return (salariobase * 0.15) - 381.44;
+		}
+		
+		else if (salariobase >=3751.06 && salariobase <=4664.68){
+			return (salariobase * 0.225) - 662.77;
+		}
+		
+		else {
+			return (salariobase * 0.275) - 896;
+		}
+		
+	}
+	
+	int main (){
+		float base, imposto;
+		
+		printf("Digite o salario Base:");
+		scanf("%f", &base);
+		
+		imposto = calculoIRPF(base);
+		
+		printf("Seu imposto e: %.2f", imposto);
+		
+		return 0;
+	}
+
+09
+
+
 
