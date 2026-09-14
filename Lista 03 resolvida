@@ -37,6 +37,47 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
+06
+#include <stdio.h>
+#include <math.h>
+
+#define PI 3.14159
+
+int main() {
+
+    float v0, graus, rad;
+    float t = 0.01, x, y;
+    float g = 9.8, k = 0.5;
+
+    printf("Digite a velocidade inicial: ");
+    scanf("%f", &v0);
+
+    printf("Digite o angulo: ");
+    scanf("%f", &graus);
+
+    rad = graus * (PI / 180);
+
+    while (1) {
+
+        x = (v0 * cos(rad) / k) * (1 - exp(-k * t));
+
+        y = ((v0 * sin(rad) + g / k) / k) * (1 - exp(-k * t))
+            - (g / k) * t;
+
+        if (y <= 0) {
+            break;
+        }
+
+        t = t + 0.01;
+    }
+
+    printf("\nAlcance: %.2f metros\n", x);
+    printf("Tempo de voo: %.2f segundos\n", t);
+
+    return 0;
+}
+
+
 07
 #include <stdio.h>
 #include <stdlib.h>
@@ -74,6 +115,7 @@ int main(int argc, char *argv[]) {
   	
   	return 0;
   }
+
 
 08
 #include <stdio.h>
@@ -115,6 +157,7 @@ int main(int argc, char *argv[]) {
 		
 		return 0;
 	}
+
 
 09
 #include <stdio.h>
