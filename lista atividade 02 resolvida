@@ -26,8 +26,25 @@ int main(int argc, char *argv[]) {
 	
 	printf("Ano de nascimento: %d", anonascimento);
 	
-	
 	return 0;
+}
+
+02
+#include <stdio.h>
+
+int main() {
+    float km, ms;
+
+    printf("Digite a velocidade em km/h: ");
+    scanf("%f", &km);
+
+    ms = km / 3.6;
+
+    printf("Velocidade em m/s: %.2f", ms);
+
+    return 0;
+}
+
 
 03
 #include <stdio.h>
@@ -49,6 +66,40 @@ int main(int argc, char *argv[]) {
 	
 	return 0;
 }
+
+04
+#include <stdio.h>
+
+int main() {
+    float c, f;
+
+    printf("Digite a temperatura em Celsius: ");
+    scanf("%f", &c);
+
+    f = c * (9.0 / 5.0) + 32.0;
+
+    printf("Temperatura em Fahrenheit: %.2f", f);
+
+    return 0;
+}
+
+05
+#include <stdio.h>
+
+int main() {
+    float angulo, radianos;
+    float p = 3.141592;
+    
+    printf("Digite o angulo em graus:");
+    scanf("%f", &angulo);
+    
+    radianos = angulo * p/180;
+    
+    printf("Angulo em radianos: %.2f", radianos);
+
+    return 0;
+}
+
 
 06
 #include <stdio.h>
@@ -145,5 +196,24 @@ int main(int argc, char *argv[]) {
 }
 
 10
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int a, b, c, maiorAB, maior;
+
+    printf("Digite tres valores: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    maiorAB = (a + b + abs(a - b)) / 2;
+
+    maior = (maiorAB + c + abs(maiorAB - c)) / 2;
+
+    printf("O maior eh %d", maior);
+
+    return 0;
+}
+
+
 
 
